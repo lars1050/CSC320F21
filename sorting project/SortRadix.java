@@ -46,6 +46,7 @@ public class SortRadix <T> {
 		// This means you have to get it from Counting sort in each loop and
 		// add to total.
 		if (byNumbers) {
+			// When you pass the array, you will have to cast it like this ... (Integer[]) array
 			// @TODO ***^^^^^^^^^^^^^^^^ FILL ME IN
 		} else {
 			// @TODO ***^^^^^^^^^^^^^^^^ FILL ME IN
