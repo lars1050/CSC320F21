@@ -1,3 +1,5 @@
+import java.lang.Math;
+
 public class SortRadix <T> {
 
   /** Creates a lambda function to use the "d" digit for sorting.
@@ -15,11 +17,17 @@ public class SortRadix <T> {
 	@param position position of the digit
 	*/
 	private static int getDigit(Integer number, int position) {
-    if (0 != position)
-      number = number / (position*10);
+    if (0 != position) {
+	   // Another mistake on my part: number = number / (position*10);
+	    // corrected with the next line!
+	    number = number / Math.power(10,position);
+
 		}
 		return number % 10;
 	}
+	
+	// >>>>>>> The below function is for Simple objects.
+	// >>>>>>> Create a similar function that operates on Integer objects that you can pass to SortCounting
 
 	/** Create a lambda function that uses the getDigit function to map a position to a digit.
 	@param pos position of digit to extract from Simple.numeric
@@ -29,12 +37,15 @@ public class SortRadix <T> {
 		return (simple) -> getDigit(simple.numeric(),pos);
 	}
 
-  public static <T> int sort(T[] array, Function<T,Integer> fn) {
+	// THIS signature was incorrect - sorry about that!
+	// public static <T> int sort(T[] array, Function<T,Integer> fn) {
+	public static <T> int sort(T[] array, boolean byNumbers) {
+		
 
     // IMPORTANT: You will need to get the number of operations for each loop
 		// This means you have to get it from Counting sort in each loop and
 		// add to total.
-		if (orderAlpha) {
+		if (byNumbers) {
 			// @TODO ***^^^^^^^^^^^^^^^^ FILL ME IN
 		} else {
 			// @TODO ***^^^^^^^^^^^^^^^^ FILL ME IN
