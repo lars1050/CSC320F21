@@ -3,7 +3,7 @@
 
 - Part I due Monday, October 25 end-of-day
 - Part II due Monday, November 8 end-of-day
-- Part III full report
+- Part III due 
 
 <hr>
 
