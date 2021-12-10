@@ -10,9 +10,12 @@
 - Do not use code written by anyone else.
 
 #### You MAY:
-- Ask Dr. Larson questions.
+- Ask Dr. Larson questions. I will answer only clarifying or general questions. Any answers that are given will be broadcast to the class (I will not reveal who asked the question).
 - Use Java documentation for data structures - there are many used in these algorithms.
 - Use the textbook.
+
+** PHONE A FRIEND (well, ME!). I will provide to each student 1 debug session (not longer than 10 minutes). This will be a debug session only. I will not provide guidance on how to write or design the solution during this time. You can request this at any time. You are likely to encounter NullPointer exceptions. Try to track down your bugs using print statements or the debugger, but if you are stuck, schedule a session. 
+
 
 #### Deliverables
 
